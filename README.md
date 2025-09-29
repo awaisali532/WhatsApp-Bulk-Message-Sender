@@ -1,32 +1,34 @@
-📱 WhatsApp Bulk Message Sender
+**📱 WhatsApp Bulk Message Sender**
 
-Automated tool to send bulk WhatsApp messages directly from an Excel sheet.
-It uses Python + pywhatkit + pandas + tkinter to simplify sending messages.
+Automated Python tool to send bulk WhatsApp messages directly from an Excel sheet.
+It leverages pandas, pywhatkit, tkinter, and pyttsx3 to make message sending simple and efficient.
 
-✨ Features
+**✨ Features **
 
-📂 Select Excel file via file dialog
+📂 File Dialog → Select Excel file directly
 
-📞 Validates phone numbers (+92 PK format only)
+📞 Phone Number Validation → Supports only +92 (PK format)
 
-🗑️ Skips empty/invalid rows automatically
+🗑️ Error Handling → Skips empty/invalid rows automatically
 
-✅ Updates Excel with message Status (Done, Invalid Number, Failed)
+✅ Excel Updates → Marks Status (Done, Invalid Number, Failed)
 
-🔁 Retries sending messages if any attempt fails
+🔁 Retries → Re-attempts sending on failure
 
-🗣️ Voice feedback using pyttsx3 (start & completion notifications)
+🗣️ Voice Feedback → Announces start & completion via text-to-speech
 
-🖥️ Console output for live tracking of progress
+🖥️ Console Output → Live progress tracking
 
-📋 Requirements
+**📋 Requirements**
 
-Make sure you have Python 3.8+ installed.
+Python 3.8+ installed
+
 Install dependencies from requirements.txt:
 
 pip install -r requirements.txt
 
-Dependencies used:
+
+**Dependencies used:**
 
 pandas
 
@@ -38,18 +40,20 @@ tkinter
 
 pyttsx3
 
-🚀 How to Run
+**🚀 How to Run**
 
-Clone this repository:
+**Clone this repository:**
 
 git clone https://github.com/your-username/whatsapp-bulk-sender.git
 cd whatsapp-bulk-sender
 
-Install required dependencies:
+
+**Install dependencies:**
 
 pip install -r requirements.txt
 
-Run the program:
+
+**Run the program:**
 
 python whatsapp_sender.py
 
@@ -58,28 +62,29 @@ python whatsapp_sender.py
 Your Excel file must have a column named Phone.
 An additional column Status will be created automatically.
 
-Phone Status
-+92 300 1234567 Done
-+92 301 9876543 Failed
-0300 7654321 Done
-(empty) Invalid/Empty
+Phone	Status
++92 300 1234567	Done
++92 301 9876543	Failed
+0300 7654321	Done
+(empty)	Invalid/Empty
 🛠️ Build as EXE (Optional)
 
-If you want to distribute as an .exe:
-
+**If you want to distribute as a standalone .exe:
+**
 pyinstaller --onefile --icon=logo.ico whatsapp_sender.py
 
---onefile → Single exe file
 
---icon=logo.ico → Custom logo (must be .ico format)
+--onefile → Generates a single exe
+
+--icon=logo.ico → Add a custom logo (must be in .ico format)
 
 🚧 Future Improvements
 
-GUI progress bar instead of console logs
+📊 GUI progress bar instead of console logs
 
-Support for other country codes
+🌍 Support for other country codes
 
-Better error handling for non-WhatsApp numbers
+🛡️ Better error handling for non-WhatsApp numbers
 
 📜 License
 
