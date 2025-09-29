@@ -1,0 +1,21 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environments
+venv/
+env/
+
+# Ignore build/exe files
+build/
+dist/
+*.spec
+
+# Ignore Excel files generated during testing
+*.xlsx
+*.xls
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,5 @@
+pandas
+pywhatkit
+pyttsx3
+openpyxl
+tk
