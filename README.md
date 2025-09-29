@@ -3,7 +3,7 @@
 Automated Python tool to send bulk WhatsApp messages directly from an Excel sheet.
 It leverages pandas, pywhatkit, tkinter, and pyttsx3 to make message sending simple and efficient.
 
-**✨ Features **
+✨ **Features**
 
 📂 File Dialog → Select Excel file directly
 
@@ -60,17 +60,23 @@ python whatsapp_sender.py
 📂 Excel File Format
 
 Your Excel file must have a column named Phone.
+
 An additional column Status will be created automatically.
 
 Phone	Status
+
 +92 300 1234567	Done
+
 +92 301 9876543	Failed
+
 0300 7654321	Done
+
 (empty)	Invalid/Empty
+
 🛠️ Build as EXE (Optional)
 
-**If you want to distribute as a standalone .exe:
-**
+**If you want to distribute as a standalone .exe:**
+
 pyinstaller --onefile --icon=logo.ico whatsapp_sender.py
 
 
